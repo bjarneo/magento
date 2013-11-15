@@ -14,7 +14,7 @@ $products->addAttributeToFilter(
 );
 
 # You could also sort desc/asc so on by using this method:
-$products->addAttributeToSort('created_at', 'desc')
+$products->addAttributeToSort('created_at', 'desc');
 
 # Loop through result:
 foreach($products as $_product) {
