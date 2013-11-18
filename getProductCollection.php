@@ -8,8 +8,7 @@ $products->addAttributeToSelect('*')->addAttributeToFilter('visibility', array('
 # Filter by attributes. Ex: 'like' => %param% / param% or like could be eq (equal) neq (not equal) so on.
 $products->addAttributeToFilter(
     array(
-        array('attribute' => 'custom_attr', 'like' => $param . '%'),
-        array('attribute' => 'custom_attr2', 'eq' => $paramTwo)
+        array('attribute' => 'custom_attr', 'like' => $param . '%')
     )
 );
 
