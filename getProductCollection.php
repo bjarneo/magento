@@ -12,8 +12,14 @@ $products->addAttributeToFilter(
     )
 );
 
+# Could set page size (how many products to return). Nice for pagination
+$products->setPageSize(10);
+
 # You could also sort desc/asc so on by using this method:
 $products->addAttributeToSort('created_at', 'desc');
+
+# Or
+$products->setOrder('entity_id','desc');
 
 # Loop through result:
 foreach($products as $_product) {
